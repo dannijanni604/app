@@ -15,21 +15,21 @@ class Firstpage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Text(
+                const Text(
                   "Join a Community of Creators",
                   style: TextStyle(color: Colors.white, fontSize: 40),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   "A simple, Fun, and Creative way to share photos, videos, messages with friends and family",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 80,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
@@ -39,10 +39,10 @@ class Firstpage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return Signup();
+                        return const Signup();
                       }));
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign Up",
                       style: TextStyle(fontSize: 20),
                     ),
@@ -54,7 +54,7 @@ class Firstpage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
@@ -66,12 +66,12 @@ class Firstpage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return Signin();
+                            return const Signin();
                           },
                         ),
                       );
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign In",
                       style: TextStyle(fontSize: 20),
                     ),

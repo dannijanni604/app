@@ -1,3 +1,4 @@
+import 'package:app/inbox.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -60,7 +61,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 50,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 75),
@@ -117,6 +118,33 @@ class ProfilePage extends StatelessWidget {
                             Text("Show all Comments"),
                           ],
                         ),
+                        SizedBox(
+                          height: 80,
+                        ),
+                        SizedBox(
+                            height: 50,
+                            width: double.infinity,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.deepOrangeAccent,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (ctx) {
+                                    return Inbox();
+                                  }),
+                                );
+                              },
+                              child: Text(
+                                "Chat",
+                                style: TextStyle(
+                                    fontSize: 22, fontWeight: FontWeight.w600),
+                              ),
+                            ))
                       ],
                     ),
                   )
