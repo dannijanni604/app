@@ -13,7 +13,7 @@ class ContactsPage extends StatelessWidget {
             Icons.search,
           ),
         ],
-        title: Text("Messages"),
+        title: const Text("Messages"),
         centerTitle: true,
         leading: const Icon(
           Icons.menu,
@@ -23,12 +23,12 @@ class ContactsPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.deepOrangeAccent,
-        child: Icon(Icons.message),
+        child: const Icon(Icons.message),
       ),
       body: GestureDetector(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (ctx) {
-            return ProfilePage();
+            return const ProfilePage();
           }));
         },
         child: Padding(

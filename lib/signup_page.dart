@@ -1,4 +1,3 @@
-import 'package:app/Firstpage.dart';
 import 'package:app/contacts_page.dart';
 import 'package:app/signin_page.dart';
 import 'package:flutter/material.dart';
@@ -113,22 +112,22 @@ class Signup extends StatelessWidget {
                         return Signin();
                       }));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.facebook,
                       size: 50,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 30,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.whatsapp,
                     size: 50,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 30,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.verified,
                     size: 50,
                   )
