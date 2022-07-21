@@ -18,7 +18,7 @@ class Signup extends StatelessWidget {
                 "Instagrm",
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               const Text(
                 "SignUp to see photos and videos from your friends.",
                 style: TextStyle(
@@ -79,7 +79,7 @@ class Signup extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ContactsPage();
+                      return const ContactsPage();
                     }));
                   },
                   child: const Text(
@@ -109,7 +109,7 @@ class Signup extends StatelessWidget {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return Signin();
+                        return const Signin();
                       }));
                     },
                     child: const Icon(
@@ -118,7 +118,7 @@ class Signup extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 30,
+                    width: 31,
                   ),
                   const Icon(
                     Icons.whatsapp,

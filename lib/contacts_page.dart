@@ -37,7 +37,7 @@ class ContactsPage extends StatelessWidget {
             children: [
               for (int i = 1; i <= 100; i++)
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
+                  padding: const EdgeInsets.only(bottom: 12),
                   child: Row(
                     children: [
                       Container(

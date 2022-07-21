@@ -64,7 +64,7 @@ class Signin extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return ContactsPage();
+                            return const ContactsPage();
                           },
                         ),
                       );
@@ -75,7 +75,7 @@ class Signin extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
                 const Text(
                   "Or",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
@@ -88,7 +88,7 @@ class Signin extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) {
-                        return Signup();
+                        return const Signup();
                       }),
                     );
                   },
@@ -105,7 +105,7 @@ class Signin extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   child: const Text(
-                    "Go to Home",
+                    "Go to Home.",
                     style: TextStyle(decoration: TextDecoration.underline),
                   ),
                 ),

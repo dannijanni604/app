@@ -28,7 +28,7 @@ class ProfilePage extends StatelessWidget {
                   ),
                   Text(
                     "Adanan Ashraf".toUpperCase(),
-                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    style: const TextStyle(color: Colors.white, fontSize: 25),
                   ),
                   const SizedBox(
                     height: 30,
@@ -68,7 +68,7 @@ class ProfilePage extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.email,
                               color: Colors.deepOrangeAccent,
@@ -79,9 +79,9 @@ class ProfilePage extends StatelessWidget {
                             Text("dannijanni604@gmail.com"),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.phone_android,
                               color: Colors.deepOrangeAccent,
@@ -92,9 +92,9 @@ class ProfilePage extends StatelessWidget {
                             Text("+923051110035"),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.group,
                               color: Colors.deepOrangeAccent,
@@ -105,9 +105,9 @@ class ProfilePage extends StatelessWidget {
                             Text("Add to Group"),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.comment,
                               color: Colors.deepOrangeAccent,
@@ -118,7 +118,7 @@ class ProfilePage extends StatelessWidget {
                             Text("Show all Comments"),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 80,
                         ),
                         SizedBox(
@@ -135,14 +135,14 @@ class ProfilePage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(builder: (ctx) {
-                                    return Inbox();
+                                    return const Inbox();
                                   }),
                                 );
                               },
-                              child: Text(
+                              child: const Text(
                                 "Chat",
                                 style: TextStyle(
-                                    fontSize: 22, fontWeight: FontWeight.w600),
+                                    fontSize: 25, fontWeight: FontWeight.w600),
                               ),
                             ))
                       ],
