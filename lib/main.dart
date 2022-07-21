@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'Firstpage.dart';
 
 main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Firstpage(),
+      theme: ThemeData(fontFamily: "xyz"),
+      home: const Firstpage(),
     );
   }
 }
